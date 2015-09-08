@@ -1,9 +1,17 @@
 <div class="container">
-  <p><form class="find_recent_tweets" action="/recent_tweets" method="get">
+   <br>
+   <form id="find-recent-tweets" action="/recent_tweets" method="get">
     <input type="text" name="twitter_handle" placeholder="twitter handle">
-    <input type="submit" value="submit">
+    <input type="submit" value="submit" id="submit-tweet">
   </form>
+	
 </div>
+
+<center><div id="ajax-loader" style="display:none;"><img src='/image/ajax-loader.gif'></img></div></center>
+
+<div id="container">
+</div>
+
 
 
 	
