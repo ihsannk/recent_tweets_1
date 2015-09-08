@@ -1,0 +1,10 @@
+<div class="container">
+  <p>Recent tweets from: <%=@twitter_user.twitter_handle%>
+  <ol>
+  <% @recent_tweets.each do |t|%>
+    
+    <li><p><%= t.text %></li>
+  
+  <% end %>
+  </ol>
+</div>
